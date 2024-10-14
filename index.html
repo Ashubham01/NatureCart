@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco-Friendly Shop</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome for icons -->
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">NatureCart</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="search-container">
+                <input type="text" placeholder="Search...">
+                <button class="search-btn"><i class="fa fa-search"  ></i></button>
+            </div>
+                <button class="sign-in-btn">Sign In</button>
+            </div>
+            <div class="cart-container">
+                <i class="fa-solid fa-cart-shopping" id="cart-icon"></i>
+                <span class="cart-count">0</div>
+        </nav>
+    </header>
+    <!-- Sign in popup -->
+    
+
+<!-- Sign-In Popup -->
+<div id="sign-in-popup" class="popup">
+    <div class="popup-content">
+        <span class="close-btn">×</span>
+        <h2>Sign In</h2>
+        <form id="sign-in-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Sign In</button>
+        </form>
+    </div>
+</div>
+
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="hero">
+            <h1>Eco-Friendly Products for a Sustainable Future</h1>
+            <a href="#shop" class="shop-now-btn">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Shop Section -->
+    <section id="shop">
+        <h2>Our Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-card img">
+                    <img src="reusablebag.jpeg" alt="Reusable Bag">
+                </div>
+                
+                <h3>Reusable Shopping Bag</h3>
+                <p>&#8377;200.00</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="bambootoothbrush.jpeg" alt="Bamboo Toothbrush">
+                <h3>Bamboo Toothbrush</h3>
+                <p>&#8377;150.00</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="steelwaterbottle.jpeg" alt="Stainless Steel Water Bottle">
+                <h3>Stainless Steel Water Bottle</h3>
+                <p>&#8377;400.00</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="beeswax.jpg" alt="Beeswax Wraps">
+                <h3>Beeswax Wraps (3-Pack)</h3>
+                <p>&#8377;350.00</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="phonecase.jpg" alt="Compostable Phone Case">
+                <h3>Compostable Phone Case</h3>
+                <p>&#8377;200.00</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="tshirt.jpeg" alt="Organic Cotton T-Shirt">
+                <h3>Organic Cotton T-Shirt</h3>
+                <p>&#8377;700.00</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="ecocups.jpg" alt="Eco-Friendly Cup">
+                <h3>Eco-Friendly Cup</h3>
+                <p>&#8377;50.00</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="notebook.jpg" alt="Recycled Notebook">
+                <h3>Recycled Notebook</h3>
+                <p>&#8377;505.00</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review-grid">
+            <div class="review-box">
+                <p>"The reusable bags are sturdy and stylish. I love using them for my grocery shopping!"</p>
+                <h4>- Ankush</h4>
+            </div>
+            <div class="review-box">
+                <p>"I bought the bamboo toothbrushes for my family, and we are very happy with the quality."</p>
+                <h4>- Simran</h4>
+            </div>
+            <div class="review-box">
+                <p>"I am thoroughly impressed with the quality of the products from this shop. Everything is durable, stylish, and most importantly, eco-friendly. It’s great to know I’m making a positive impact on the environment with my purchases."</p>
+                <h4>- Ayush </h4>
+            </div>
+            <div class="review-box">
+                <p>"The stainless steel water bottle keeps my drinks cold for hours. Great purchase!"</p>
+                <h4>- Saurabh</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart and Carbon Footprint Section -->
+    <section id="cart">
+        <h2>Your Cart</h2>
+        <div id="cart-items">
+            <!-- Cart items will be dynamically added here -->
+        </div>
+        <div id="carbon-footprint">
+            <h3>Carbon Footprint Saved:</h3>
+            <p id="footprint-details">Add items to your cart to see the carbon footprint savings.</p>
+        </div>
+        <button id="checkout-btn">Checkout</button>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <div class="about-content">
+            <p>NatureCart was founded with the mission to promote sustainability by offering eco-friendly products that help reduce waste and protect our planet. Our journey began with a simple idea: to make it easier for people to find and use products that are not only good for them but also good for the environment.</p>
+            <p>We believe that small actions can make a big difference, and by choosing eco-friendly alternatives, we can collectively create a more sustainable future. Our product range includes reusable shopping bags, organic t-shirts, and more. Each product is carefully selected to ensure it meets our high standards of sustainability and quality.</p>
+            <p>Thank you for choosing NatureCart and joining us on this journey towards a greener, more sustainable world.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>About NatureCart</h3>
+                <p>NatureCart is committed to providing eco-friendly and sustainable products for a better tomorrow. We believe in making the world a greener place, one product at a time.</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#shop">Shop</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+    
+                <p><i class="fas fa-envelope"></i>  Email: support@NatureCart.com</p>
+                <p><i class="fas fa-phone"></i>  Phone: +91 9004532987</p>
+                <p><i class="fas fa-map-marker-alt"></i>  Address: NatureCart Office, Riverside Tower, Sector-125, Noida, India</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 NatureCart. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="interactive.js"></script>
+</body>
+
+</html>
